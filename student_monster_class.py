@@ -13,3 +13,13 @@ class StudentMonster(Monster):
 
     def get_student_no(self):
         return self.__student_no
+
+    def add_skill(self, skill):
+        self.skill_list.append(skill)
+        return 'Skill Added'
+
+    def get_skills(self):
+        all_skills = ''
+        for skill in self.skill_list:
+            all_skills += f'{skill}, '
+        return all_skills
