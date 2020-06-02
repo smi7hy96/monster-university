@@ -19,7 +19,4 @@ class StudentMonster(Monster):
         return 'Skill Added'
 
     def get_skills(self):
-        all_skills = ''
-        for skill in self.skill_list:
-            all_skills += f'{skill}, '
-        return all_skills
+        return ', '.join(self.skill_list)

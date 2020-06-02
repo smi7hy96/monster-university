@@ -15,10 +15,10 @@ class CourseTest(unittest.TestCase):
         self.assertEqual(self.course.add_student(randall), 'Student Added')
 
     def test_get_students(self):
-        self.assertEqual(self.course.get_students(), 'Mike, Sully, ')
+        self.assertEqual(self.course.get_students(), 'Mike, Sully')
         randall = StudentMonster('Randall', '123C', 'Purple', 24, ['sneaky', 'chameleon skin'])
         self.course.add_student(randall)
-        self.assertEqual(self.course.get_students(), 'Mike, Sully, Randall, ')
+        self.assertEqual(self.course.get_students(), 'Mike, Sully, Randall')
 
 
 if __name__ == '__main__':

@@ -10,9 +10,9 @@ class StudentMonsterTest(unittest.TestCase):
         self.assertEqual(self.student_monster.add_skill('nimble'), 'Skill Added')
 
     def test_get_skills(self):
-        self.assertEqual(self.student_monster.get_skills(), 'small, smart, ')
+        self.assertEqual(self.student_monster.get_skills(), 'small, smart')
         self.student_monster.add_skill('nimble')
-        self.assertEqual(self.student_monster.get_skills(), 'small, smart, nimble, ')
+        self.assertEqual(self.student_monster.get_skills(), 'small, smart, nimble')
 
 
 if __name__ == '__main__':

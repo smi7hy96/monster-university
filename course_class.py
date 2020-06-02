@@ -17,8 +17,9 @@ class Course:
         return 'Student Added'
 
     def get_students(self):
-        all_students = ''
+        all_students = []
         for student in self.list_of_students:
-            all_students += f'{student.get_name()}, '
-        return all_students
+            all_students.append(student.get_name())
+
+        return ', '.join(all_students)
 
