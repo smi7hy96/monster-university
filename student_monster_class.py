@@ -3,8 +3,10 @@ from monster_class import *
 
 class StudentMonster(Monster):
 
-    def __init__(self, name, tax_number, fur, student_no, skill_list=[]):
+    def __init__(self, name, tax_number, fur, student_no, skill_list=None):
         super().__init__(name, tax_number, fur)
+        if skill_list is None:
+            skill_list = []
         self.__student_no = student_no
         self.skill_list = skill_list
 

@@ -3,7 +3,9 @@ from student_monster_class import *
 
 class Course:
 
-    def __init__(self, module_name, start_date, list_of_students=[]):
+    def __init__(self, module_name, start_date, list_of_students=None):
+        if list_of_students is None:
+            list_of_students = []
         self.__module_name = module_name.title()
         self.list_of_students = list_of_students
         self.start_date = start_date
