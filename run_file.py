@@ -6,15 +6,13 @@ print('WELCOME TO MONSTERS UNIVERSITY')
 
 # CREATE 2 STUDENTS
 mike = StudentMonster('Mike', '666S', 'green', 25, ['small', 'smart'])
-sully = StudentMonster('Sully', '456A', 'Blue', 23, ['huge', 'scary'])
+sully = StudentMonster('Sully', '456A', 'Blue', 23, [])
 
 # ADD SKILL
 mike.add_skill('scary python')
 sully.add_skill('milking goats')
-
 # CREATE COURSE
 course1 = Course('scaring 6 year olds', '02/06/2020')
-
 
 # ENROLL STUDENTS
 # first we need our course instance
