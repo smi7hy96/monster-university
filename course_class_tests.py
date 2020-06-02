@@ -8,7 +8,7 @@ class CourseTest(unittest.TestCase):
     def setUp(self):
         mike = StudentMonster('Mike', '666S', 'green', 25, ['small', 'smart'])
         sully = StudentMonster('Sully', '456A', 'Blue', 23, ['huge', 'scary'])
-        self.course = Course('Scaring', [mike, sully], '20/08/2020')
+        self.course = Course('Scaring', '20/08/2020', [mike, sully])
 
     def test_add_student(self):
         randall = StudentMonster('Randall', '123C', 'Purple', 24, ['sneaky', 'chameleon skin'])
